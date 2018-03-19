@@ -22,5 +22,10 @@
 	echo "</div>";
 	echo "<fieldset>";
 	echo "<button type=\"submit\" value=\"Save\">Sauvegarder opportunité</button>";	
+        echo"<a href=\"sms://".$contact->getTel()."\">Envoyer un SMS</a><br/>";
+        echo"<a href=\"tel://".$contact->getTel()."\">Appeler ce prescripteur</a>";
 	echo("</form>");
 ?>
+<!--  foreach($contacts as $info){
+            echo "<select name="type" id="type" value="<?php echo TYP_LIBELLE; ?>" >";
+        }-->
